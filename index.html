@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma ferme</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p><span>Ma</span>Ferme</p>
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Acceuil</a></li>
+        <li><a href="#menu">Nos animaux</a></li>
+        <li><a href="#about_us">A Propos de nous</a></li>
+        <li><a href="#reservation">Réservation</a></li>
+      </ul>
+
+      <!-- menu responsive -->
+      <div class="toggle_menu"></div>
+    </header>
+
+    <!-- section acceuil home -->
+
+    <section id="home">
+      <div class="left">
+        <h2>Bienveunu a Ma Ferme</h2>
+        <p>
+          Nous sommes une ferme qui faisons la production et aussi la vente de
+          volailles et des ovins et des bovins.
+        </p>
+        <button><a href="#">Découvrer nous maintenant</a></button>
+      </div>
+      <div class="right">
+        <img src="images/ferme.jpg" />
+      </div>
+    </section>
+
+    <!-- section  menu -->
+
+    <section id="menu">
+      <h4 class="mini_title">Nos Menu</h4>
+      <h2 class="title">Menu Populaire</h2>
+      <div class="dishes">
+        <div class="dish">
+          <img src="images/poulet.png" />
+          <p>Poulet</p>
+          <a href="#">VOIR</a>
+        </div>
+        <div class="dish">
+          <img src="images/pintade.jpg" />
+          <p>Pintade</p>
+          <a href="#">VOIR</a>
+        </div>
+        <div class="dish">
+          <img src="images/porc.jpeg" />
+          <p>Porc</p>
+          <a href="#">VOIR</a>
+        </div>
+        <div class="dish">
+          <img src="images/mouton-removebg-preview.png" />
+          <p>Mouton</p>
+          <a href="#">VOIR</a>
+        </div>
+        <div class="dish">
+          <img src="images/boeuf-removebg-preview.png" />
+          <p>Bœuf</p>
+          <a href="#">VOIR</a>
+        </div>
+        <div class="dish">
+          <img src="images/cabri.jpg" />
+          <p>Cabri</p>
+          <a href="#">VOIR</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- section about us -->
+
+    <section id="about_us">
+      <h4 class="mini_title">A propos de nous</h4>
+      <h2 class="title">Pourquoi nous choisir ?</h2>
+      <div class="about">
+        <div class="left">
+          <img src="images/vec.jpg" />
+        </div>
+        <div class="right">
+          <h3>Les meilleurs produits du monde</h3>
+          <p>
+            Chez Ma Ferme, nous nous engageons à fournir à nos clients des
+            produits de la plus haute qualité, élevés avec soin et amour. Voici
+            quelques raisons convaincantes pour lesquelles vous devriez choisir
+            notre ferme pour votre approvisionnement en poulet, pintade, porc,
+            mouton, bœuf ou cabri :
+          </p>
+          <p>
+            Nous croyons fermement que la qualité commence dès la naissance de
+            nos animaux. Nous sélectionnons rigoureusement nos races pour
+            garantir une viande juteuse, tendre et pleine de saveur. Nos
+            méthodes d'élevage respectueuses de l'environnement et notre
+            engagement envers le bien-être animal garantissent des produits de
+            la plus haute qualité pour votre table.
+          </p>
+          <button><a href="#">Lire plus</a></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section comments -->
+
+    <!-- section reservation -->
+    <section id="reservation">
+      <h4 class="mini_title">reservation</h4>
+      <h2 class="title">Remplir ce formulaire pour une réservation</h2>
+      <form action="">
+        <label> Votre Nom</label>
+        <input type="text" />
+        <label> Votre Email</label>
+        <input type="email" />
+        <label> Votre Numero</label>
+        <input type="text" />
+        <label> Date de Réservation</label>
+        <input type="date" />
+        <input type="submit" value="Faire une Réservation" />
+      </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="services_list">
+        <div class="service">
+          <img src="images/clock.png" alt="" />
+          <h2>Ouverture</h2>
+          <p>08h00 à 20h00</p>
+        </div>
+
+        <div class="service">
+          <img src="images/pin.png" alt="" />
+          <h2>Adresse</h2>
+          <p>Cote d'ivoire-yamoussoukro</p>
+        </div>
+        <div class="service">
+          <img src="images/email.png" alt="" />
+          <h2>Email</h2>
+          <p>maferme@gmail.com</p>
+        </div>
+        <div class="service">
+          <img src="images/call.png" alt="" />
+          <h2>Numero</h2>
+          <p>+225 0710035009</p>
+        </div>
+
+        <hr />
+      </div>
+
+      <p class="footer_text">
+        Réalisé par <span>Ma Ferme</span> | Tous les droits sont réservés.
+      </p>
+    </footer>
+
+    <script>
+      var small_menu = document.querySelector(".toggle_menu");
+      var menu = document.querySelector(".menu");
+
+      small_menu.onclick = function () {
+        small_menu.classList.toggle("active");
+        menu.classList.toggle("responsive");
+      };
+    </script>
+  </body>
+</html>
